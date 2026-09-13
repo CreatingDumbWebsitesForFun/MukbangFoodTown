@@ -1,5 +1,6 @@
-body {
-    margin: 0;
+body {body {
+    background: lime !important;
+ margin: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg, #ff4d6d, #ff9f1c, #2ec4b6);
     color: #111;
