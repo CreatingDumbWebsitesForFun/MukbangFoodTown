@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodFareCard - Mukbang Food Town</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>🍓 Mukbang Food Town 🚇</h1>
+
+        <nav>
+            <a href="index.html">🏠 Home</a>
+            <a href="foodfarecard.html">💳 FoodFareCard</a>
+            <a href="#">💰 Fares</a>
+            <a href="#">🚇 Stations</a>
+            <a href="#">🗺️ Map</a>
+            <a href="#">ℹ️ About MFT</a>
+            <a href="#">❓ Help</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>💳 FoodFareCard</h2>
+
+            <p>Enter your FoodFareCard number.</p>
+
+            <input
+                type="text"
+                id="cardNumber"
+                placeholder="0 00 000 0000"
+                maxlength="13"
+            >
+
+            <br><br>
+
+            <button onclick="checkCard()">
+                💳 Check Balance
+            </button>
+
+            <p id="message"></p>
+        </section>
+    </main>
+
+    <script>
+        function checkCard() {
+            const card = document.getElementById("cardNumber").value;
+            const message = document.getElementById("message");
+
+            if (card === "0 00 000 0001") {
+                message.textContent = "Card found! 🍵 Balance: 1,000 Matcha";
+            } else {
+                message.textContent =
+                    "yk what bro idk if this exists try again or smth";
+            }
+        }
+    </script>
+
+</body>
+</html>
