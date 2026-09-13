@@ -1,42 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Mukbang Food Town</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <header class="topbar">
+
         <h1>🍓 Mukbang Food Town 🚇</h1>
 
         <nav>
-            <a href="#">🏠 Home</a>
-            <a href="#">💳 FoodFareCard</a>
-            <a href="#">💰 Fares</a>
-            <a href="#">🚇 Stations</a>
-            <a href="#">🗺️ Map</a>
-            <a href="#">ℹ️ About MFT</a>
-            <a href="#">❓ Help</a>
+            <a href="#home">🏠 Home</a>
+            <a href="#foodfarecard">💳 FoodFareCard</a>
+            <a href="#fares">💰 Fares</a>
+            <a href="#stations">🚇 Stations</a>
+            <a href="#map">🗺️ Map</a>
+            <a href="#about">ℹ️ About MFT</a>
+            <a href="#help">❓ Help</a>
         </nav>
+
     </header>
 
+
     <main>
-        <h2>WELCOME TO MUKBANG FOOD TOWN</h2>
 
-        <p>🍜 Eat. 🚇 Ride. 🍓 Repeat.</p>
+        <!-- HOME -->
 
-        <section>
-            <h2>FoodFareCard</h2>
-            <p>Your food-powered transit card.</p>
-            <a href="foodfarecard.html">
-    <button>💳 Check FoodFareCard</button>
-</a>
-            
+        <section id="home" class="hero">
+
+            <h2>WELCOME TO MUKBANG FOOD TOWN</h2>
+
+            <p class="slogan">
+                🍜 Eat. 🚇 Ride. 🍓 Repeat.
+            </p>
+
         </section>
+
+
+        <!-- FOODFARECARD -->
+
+        <section id="foodfarecard" class="card-section">
+
+            <h2>💳 FoodFareCard</h2>
+
+            <p>
+                Your food-powered transit card.
+            </p>
+
+            <div class="checker">
+
+                <label for="cardNumber">
+                    Enter your FoodFareCard number:
+                </label>
+
+                <input
+                    type="text"
+                    id="cardNumber"
+                    placeholder="0 00 000 0000"
+                    maxlength="13"
+                >
+
+                <button onclick="checkBalance()">
+                    💳 Check Balance
+                </button>
+
+                <p id="balanceMessage"></p>
+
+            </div>
+
+        </section>
+
+
+        <!-- FARES -->
+
+        <section id="fares" class="info-section">
+
+            <h2>💰 Fares</h2>
+
+            <p>
+                Standard fare: <strong>160 Matcha</strong>
+            </p>
+
+            <p>
+                That's <strong>$1.60</strong>.
+            </p>
+
+            <p>
+                Transfers are included as long as you stay
+                inside the paid area.
+            </p>
+
+        </section>
+
+
+        <!-- STATIONS -->
+
+        <section id="stations" class="info-section">
+
+            <h2>🚇 Stations</h2>
+
+            <p>
+                Explore the stations of Mukbang Food Town.
+            </p>
+
+            <div class="station-list">
+
+                <span>101 김밥역</span>
+                <span>102 초밥역</span>
+                <span>103 버거역</span>
+                <span>104 라면역</span>
+                <span>105 음식 박물관역</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- MAP -->
+
+        <section id="map" class="info-section">
+
+            <h2>🗺️ Map</h2>
+
+            <p>
+                The MFT transit map is coming soon! 🚇
+            </p>
+
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about" class="info-section">
+
+            <h2>ℹ️ About MFT</h2>
+
+            <p>
+                Mukbang Food Town is a fictional city
+                powered by food, trains, and questionable decisions.
+            </p>
+
+        </section>
+
+
+        <!-- HELP -->
+
+        <section id="help" class="info-section">
+
+            <h2>❓ Help</h2>
+
+            <p>
+                Need help with FoodFareCard, fares, or trains?
+            </p>
+
+            <button onclick="showHelp()">
+                🆘 Get Help
+            </button>
+
+            <p id="helpMessage"></p>
+
+        </section>
+
     </main>
 
+
+    <footer>
+
+        <p>
+            🍓 Mukbang Food Town • FoodFareCard
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
