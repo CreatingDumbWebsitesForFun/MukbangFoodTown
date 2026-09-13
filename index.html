@@ -125,15 +125,101 @@
 
         <!-- MAP -->
 
-        <section id="map" class="info-section">
+        <section id="map" class="info-section map-section">
 
-            <h2>🗺️ Map</h2>
+    <h2>🗺️ MFT Transit Map</h2>
 
-            <p>
-                The MFT transit map is coming soon! 🚇
-            </p>
+    <p>Click a station to see its information! 🚇</p>
 
-        </section>
+    <div class="map-container">
+
+        <svg id="mftMap" viewBox="0 0 900 500">
+
+            <!-- LINE 1 -->
+            <line class="line1"
+                x1="100" y1="120"
+                x2="800" y2="120" />
+
+            <!-- LINE 2 -->
+            <line class="line2"
+                x1="200" y1="300"
+                x2="700" y2="300" />
+
+            <!-- LINE 3 -->
+            <line class="line3"
+                x1="150" y1="420"
+                x2="750" y2="420" />
+
+
+            <!-- LINE 1 STATIONS -->
+
+            <circle class="station"
+                cx="100" cy="120" r="12"
+                data-station="101 김밥역" />
+
+            <circle class="station"
+                cx="275" cy="120" r="12"
+                data-station="102 초밥역" />
+
+            <circle class="station"
+                cx="450" cy="120" r="12"
+                data-station="103 버거역" />
+
+            <circle class="station"
+                cx="625" cy="120" r="12"
+                data-station="104 라면역" />
+
+            <circle class="station transfer"
+                cx="800" cy="120" r="12"
+                data-station="105 음식 박물관역" />
+
+
+            <!-- LINE 2 STATIONS -->
+
+            <circle class="station"
+                cx="200" cy="300" r="12"
+                data-station="201 식품 시장역" />
+
+            <circle class="station"
+                cx="400" cy="300" r="12"
+                data-station="202 스테이크역" />
+
+            <circle class="station"
+                cx="550" cy="300" r="12"
+                data-station="203 햄버거역" />
+
+            <circle class="station"
+                cx="700" cy="300" r="12"
+                data-station="204 Nice2CU역" />
+
+
+            <!-- LINE 3 STATIONS -->
+
+            <circle class="station"
+                cx="150" cy="420" r="12"
+                data-station="301 공항역" />
+
+            <circle class="station"
+                cx="350" cy="420" r="12"
+                data-station="302 공항 음식역" />
+
+            <circle class="station transfer"
+                cx="550" cy="420" r="12"
+                data-station="303 음식 박물관역" />
+
+            <circle class="station"
+                cx="750" cy="420" r="12"
+                data-station="304 Nice3CU역" />
+
+        </svg>
+
+    </div>
+
+    <div id="stationInfo">
+        Click a station 👆
+    </div>
+
+</section>
 
 
         <!-- ABOUT -->
