@@ -71,8 +71,19 @@
             } else {
                 message.textContent =
                     "yk what bro idk if this exists try again or smth";
-            }
-        }
+                function buyCard(type) {
+    const message = document.getElementById("buyMessage");
+
+    if (type === "adult") {
+        message.textContent =
+            "🔴 Adult FoodFareCard selected — 101 Matcha ($1.01)";
+    }
+
+    if (type === "kids") {
+        message.textContent =
+            "🩷 Kids FoodFareCard selected — 101 Matcha ($1.01)";
+    }
+}        
     </script>
 
 </body>
